@@ -5,7 +5,7 @@
   --main-title-color: #212121;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 html {
   box-sizing: border-box;
@@ -103,7 +103,7 @@ textarea {
   display: block;
   margin-right: 93px;
   padding-bottom: 32px 0;
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -114,20 +114,20 @@ textarea {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
 }
 .logo-st {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   color: var(--main-bg-color);
 }
 .logo-list-title {
   font-weight: 500;
   font-size: 14px;
-  line-height: ;
+  line-height: 1, 7;
   color: var(--main-text-color);
 }
 .logo-booton {
@@ -239,7 +239,7 @@ textarea {
   color: var(--accent-color);
 }
 .contacts-tel-top {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -282,7 +282,7 @@ textarea {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/overlay.jpeg');
+    url("../images/overlay.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -433,7 +433,7 @@ textarea {
   align-items: center;
 }
 .nav-list {
-  latter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 .nav-list-item {
   font-weight: 500;
@@ -462,7 +462,7 @@ textarea {
   color: var(--accent-color);
 }
 .nav-list-title.current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -936,7 +936,7 @@ textarea {
 }
 
 .contact-form-lab :before {
-  content: '';
+  content: "";
   position: absolute;
   left: 10px;
   top: 0;

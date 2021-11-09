@@ -512,7 +512,7 @@ textarea {
   line-height: 1.14;
   color: var(--accent-color);
 }
-.contacts__title {
+.contacts__link {
   display: block;
   font-weight: 500;
   padding: 32px 0;
@@ -523,16 +523,16 @@ textarea {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts__title :hover {
+.contacts__link:hover {
   color: var(--accent-color);
 }
-.contacts__title :focus {
+.contacts__link:focus {
   color: var(--accent-color);
 }
-.contacts__title .current {
+.contacts__link.current {
   color: var(--accent-color);
 }
-.contacts__title.current::after {
+.contacts__link.current::after {
   content: "";
   position: absolute;
   left: 0;

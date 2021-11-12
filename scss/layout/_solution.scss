@@ -1,27 +1,11 @@
-.solution-col__btn {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  position: center;
-  display: flex;
-  align-items: center;
+.solution {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  color: white;
-  text-decoration: none;
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.solution-col__btn:hover {
-  background-color: var(--accent-color);
-}
-.solution-col__btn:focus {
-  background-color: var(--accent-color);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  color: var(--main-bg-color);
 }

@@ -40,8 +40,10 @@
 .features__div:not(:last-child) {
   margin-right: 30px;
 }
-.features__icon:hover,
-.features__icon:focus {
-  border: var(--accent-color);
-  color: var(--accent-color);
+.features__icon {
+  &:hover,
+  &:focus {
+    border: var(--accent-color);
+    color: var(--accent-color);
+  }
 }

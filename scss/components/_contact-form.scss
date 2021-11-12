@@ -26,11 +26,12 @@
   font-size: 16px;
   line-height: 1.8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-form__btn:hover .contact-form__btn:focus {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  color: var(--main-bg-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
+  }
 }
 
 .contact-form__lab {
@@ -56,18 +57,17 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &:focus + .contact-form__svg {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 .contact-form__input + .contact-form__input {
   margin-top: 40px;
-}
-
-.contact-form__input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-.contact-form__input:focus + .contact-form__svg {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .contact-form__text {
@@ -87,10 +87,10 @@
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact-form__area:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .contact-form__area::placeholder {
@@ -111,12 +111,17 @@
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+  }
+  &:checked ~ .contact-form__chackbox-icon {
+    border-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+  }
 }
-.contact-form__conditions:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-}
+
 .contact-form__svg {
   position: absolute;
   top: 50%;
@@ -125,10 +130,11 @@
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
-.contact-form__svg:hover {
-  fill: var(--accent-color);
-}
+
 .contact-form__chackbox {
   display: flex;
   flex-direction: row;
@@ -148,10 +154,7 @@
   height: 18px;
   margin-right: 7px;
 }
-.contact-form__conditions:checked ~ .contact-form__chackbox-icon {
-  border-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
-}
+
 .contact-form__a {
   text-decoration: underline;
   color: var(--accent-color);

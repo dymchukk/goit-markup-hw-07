@@ -34,6 +34,8 @@
   background-size: contain;
 }
 .contacts__list {
+  display: flex;
+  margin-left: auto;
   letter-spacing: 0.03em;
 }
 .contacts__item {
@@ -54,7 +56,7 @@
 
 .contacts__link {
   display: flex;
-  margin-left: 30px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
